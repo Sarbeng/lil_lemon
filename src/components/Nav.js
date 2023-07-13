@@ -1,7 +1,7 @@
 export default function Nav () {
     return <>
-   <nav>
-   <ul>
+   <nav className="text-sm">
+   <ul className="flex gap-7">
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Menu</a></li>
