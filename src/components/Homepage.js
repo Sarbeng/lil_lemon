@@ -1,4 +1,5 @@
 
+import CallToAction from './CallToAction';
 import LayoutPage from './Layout';
 
 export default function HomePage () {
@@ -6,8 +7,8 @@ export default function HomePage () {
         <LayoutPage>
         
       
-     <section className=''>
-     Home
+     <section>
+        <CallToAction/>
      </section>
       </LayoutPage>
     );
