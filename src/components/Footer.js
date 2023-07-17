@@ -1,11 +1,11 @@
 import logo from "../assets/Logo.svg"
 export default function Footer () {
     return <>
-   <footer>
+   <footer className="flex justify-between">
     <img src={logo}/>
     <section>
-        <h3>Doormat Nav igation</h3>
-        <ul>
+        <h3 className="font-extrabold text-xl w-32 h-14">Doormat Navigation</h3>
+        <ul className="text-xl">
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Menu</a></li>
@@ -15,8 +15,8 @@ export default function Footer () {
             </ul>
     </section>
     <section>
-        <h3>Contact</h3>
-        <ul>
+        <h3 className="font-extrabold text-xl w-32 h-14">Contact</h3>
+        <ul className="text-xl">
                 <li><a>Address</a></li>
                 <li><a>Phone number</a></li>
                 <li><a>Email</a></li>
@@ -24,8 +24,8 @@ export default function Footer () {
             </ul>
     </section>
     <section>
-        <h3>Social Media Links</h3>
-        <ul>
+        <h3 className="font-extrabold text-xl w-32 h-14 ">Social Media Links</h3>
+        <ul className="text-xl">
                 <li><a>Address</a></li>
                 <li><a>Phone number</a></li>
                 <li><a>Email</a></li>

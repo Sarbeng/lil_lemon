@@ -7,5 +7,7 @@
 			"path": "../../../promo_allapi"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "promo_allapi"
+	}
 }
