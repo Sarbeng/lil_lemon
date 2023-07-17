@@ -9,7 +9,7 @@ module.exports = {
     },
     extend: {
       //adding custom colors
-      color: {
+      colors: {
         'primary' : {
           green: '#495E57',
           yellow: '#F4CE14',
