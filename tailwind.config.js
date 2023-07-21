@@ -7,10 +7,11 @@ module.exports = {
     fontFamily: {
       'sans': ['Karla', 'sans-serif'],
     },
+
     extend: {
       //adding custom colors
       colors: {
-        'primary' : {
+        'primary': {
           green: '#495E57',
           yellow: '#F4CE14',
         },
@@ -25,6 +26,58 @@ module.exports = {
       },
       fontFamily: {
         'markazi': ['Markazi Text', 'serif'],
+      },
+      fontSize: {
+        'display': ['64px', {
+          fontFamily: 'Markazi Text',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          lineHeight: 'normal',
+        }],
+        'card-title': ['18px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '700',
+          lineHeight: 'normal',
+          textTransform: 'capitalize',
+        }],
+        'lead-text': ['18px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          lineHeight: 'normal',
+        }],
+        'paragraph-text': ['18px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '400',
+          lineHeight: 'normal',
+        }],
+        'highlight-text': ['16px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          lineHeight: 'normal',
+        }],
+        'sub-title': ['40px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '400',
+          lineHeight: 'normal',
+        }],
+        'section-title': ['20px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '900',
+          lineHeight: 'normal',
+        }],
+        'section-categories': ['16px', {
+          fontFamily: 'Karla',
+          fontStyle: 'normal',
+          fontWeight: '900',
+          lineHeight: 'normal',
+        }],
+
       },
     },
   },
