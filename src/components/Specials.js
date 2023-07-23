@@ -1,6 +1,7 @@
 import greekSalad from "../assets/greek salad.jpg";
 import bruscheta from "../assets/bruchetta.png";
-import lemonDessert from "../assets/lemon dessert.jpg"
+import lemonDessert from "../assets/lemon dessert.jpg";
+import bike from "../assets/bike.svg"
 
 export default function Specials() {
     const card_content = [
@@ -29,9 +30,22 @@ export default function Specials() {
                 <h1 className="font-markazi text-display text-7xl">This week Specials!</h1>
                 <button className="capitalize bg-primary-yellow text-lead-text  text-highlights-black rounded-2xl h-16 px-8 w-[200px] ">Online Menu</button>
             </section>
-            <section>
-        
+           <section id="card-collection" className="flex">
+            {card_content.map((cards)=> {
+                return <section id="card" key={cards.description}>
+                <img src={cards.image} alt="img placeholder"/>
+                <section>
+                    <h4>{cards.title}</h4>
+                    <p>{cards.price}</p>
+                </section>
+                <p>{cards.description}</p>
+                <section>
+                    <p>Order a delivery</p>
+                    <img src={bike} alt="a bike icon"/>
+                </section>
             </section>
+            })}
+           </section>
         </section>
     );
 }
