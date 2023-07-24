@@ -1,5 +1,6 @@
 
 import CallToAction from './CallToAction';
+import CustomerSay from './CustomersSay';
 import LayoutPage from './Layout';
 import Specials from './Specials';
 
@@ -11,6 +12,7 @@ export default function HomePage () {
      <section>
         <CallToAction/>
         <Specials/>
+        <CustomerSay/>
      </section>
       </LayoutPage>
     );
