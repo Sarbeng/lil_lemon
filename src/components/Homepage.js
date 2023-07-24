@@ -1,5 +1,6 @@
 
 import CallToAction from './CallToAction';
+import Chicago from './Chicago';
 import CustomerSay from './CustomersSay';
 import LayoutPage from './Layout';
 import Specials from './Specials';
@@ -13,6 +14,7 @@ export default function HomePage () {
         <CallToAction/>
         <Specials/>
         <CustomerSay/>
+        <Chicago/>
      </section>
       </LayoutPage>
     );
