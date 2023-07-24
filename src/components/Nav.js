@@ -1,13 +1,13 @@
 export default function Nav () {
     return <>
-   <nav className="text-sm">
+   <nav className="text-navbar">
    <ul className="flex gap-7">
-                <li><a>Home</a></li>
-                <li><a>About</a></li>
-                <li><a>Menu</a></li>
-                <li><a>Reservations</a></li>
-                <li><a>Order Online</a></li>
-                <li><a>Login</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Reservations</a></li>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
    </nav>
     </>

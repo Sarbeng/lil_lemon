@@ -47,7 +47,7 @@ module.exports = {
           fontWeight: '500',
           lineHeight: 'normal',
         }],
-        'paragraph-text': ['18px', {
+        'paragraph-text': ['16px', {
           fontFamily: 'Karla',
           fontStyle: 'normal',
           fontWeight: '400',
@@ -77,6 +77,13 @@ module.exports = {
           fontWeight: '900',
           lineHeight: 'normal',
         }],
+        'navbar':['20px', {
+          fontFamily:'Karla',
+          fontStyle: 'normal',
+          fontWeight: '500',
+          lineHeight: 'normal',
+          textTransform:'capitalize'
+        }]
 
       },
     },
