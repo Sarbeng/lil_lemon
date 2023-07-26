@@ -5,6 +5,7 @@ import HomePage from './components/pages/Home/Homepage';
 import UnderConstruction from "./components/pages/404/error404";
 import Error404 from "./components/pages/404/error404";
 import LayoutPage from "./components/Layout/Layout";
+import BookingConfirmation from "./components/pages/Booking/BookingConfirmation";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='/login' element={<UnderConstruction/>}></Route>
         <Route path='/about' element={<UnderConstruction/>}></Route>
         <Route path='/orderonline' element={<UnderConstruction/>}></Route>
+        <Route path='/bookingconfirmation' element={<BookingConfirmation/>}></Route>
         <Route path='*' element={<Error404 />}></Route>
       </Routes>
      </LayoutPage>
