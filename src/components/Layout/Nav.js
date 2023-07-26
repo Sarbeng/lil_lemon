@@ -32,7 +32,7 @@ export default function Nav () {
     }
     return <>
    <nav className="flex justify-end">
-   <section className="invisible md:visible"><ul className="flex gap-7 text-highlight-text h-16 items-center">
+   <section className="hidden md:block"><ul className="flex gap-7 text-highlight-text h-16 items-center">
                 {
                     links.map((navlink)=> {
                         return <li className="capitalize"><NavLink to={navlink.linkTo} className={({isActive}) => isActive ? "border border-b-2 border-x-0 p-2 border-primary-yellow " : "p-1 hover:border-primary-yellow hover:border hover:py-2  hover:border-b-2 hover:border-x-0" }>{navlink.text}</NavLink></li>
@@ -40,7 +40,7 @@ export default function Nav () {
                 }
                 
             </ul></section>
-            <button className="visible md:invisible" onClick={handleToggle}>
+            <button className="block md:hidden" onClick={handleToggle}>
                     {isExpanded? <MdOutlineClose/> :
                     <MdOutlineMenu/>}
                 </button>
