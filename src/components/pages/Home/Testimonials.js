@@ -1,6 +1,6 @@
 import {MdStars, MdStar } from "react-icons/md"
 
-export default function CustomerSay () {
+export default function Testimonials () {
     const testimonials = [
         {
             name:"Kwabena Anthem",
@@ -29,7 +29,7 @@ export default function CustomerSay () {
     ]
     return <section className="bg-primary-yellow px-4 md:px-[290px] mt-8 h-[590px] flex flex-col justify-center"> 
         <h2 className="font-markazi text-display text-center">Testimonials</h2>
-        <section id="testimonials" className="flex gap-8 justify-between mt-16">
+        <section id="testimonials" className="flex gap-8 justify-between mt-16 flex-col  md:flex-row">
             {testimonials.map((card) => {
                 return <section id="testiominal_card" className="bg-white  px-8 w-[200px] h-[175px] flex flex-col justify-center gap-4 rounded-lg" key={card.name}>
                 <h5 className="flex items-center">Rating: <span className="flex text-yellow-500"><MdStar/><MdStar/><MdStar/><MdStar/><MdStar/></span></h5>

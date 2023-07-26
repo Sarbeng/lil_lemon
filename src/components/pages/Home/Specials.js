@@ -27,12 +27,12 @@ export default function Specials() {
     return (
         <section className="md:px-[290px] px-4 mt-24">
             <section id="title" className="flex justify-between mb-[60px]">
-                <h1 className="font-markazi text-display text-7xl">This week Specials!</h1>
+                <h1 className="font-markazi md:text-display  text-5xl md:text-7xl">This week Specials!</h1>
                 <button className="capitalize bg-primary-yellow text-lead-text  text-highlights-black rounded-2xl h-16 px-8 w-[200px] ">Online Menu</button>
             </section>
-            <section id="card-collection" className="flex gap-8">
+            <section id="card-collection" className="flex gap-8 flex-col md:flex-row">
                 {card_content.map((cards) => {
-                    return <section id="card" key={cards.description} className="w-[265px] rounded-2xl bg-highlights-grey">
+                    return <section id="card" key={cards.description} className="md:w-[265px] w-full rounded-2xl bg-highlights-grey">
                         <img src={cards.image} alt="img placeholder" className="rounded-t-2xl w-full h-[227px] bg-cover bg-no-repeat" />
                         <section className="p-6">
                             <section className="flex justify-between mb-7">

@@ -1,4 +1,4 @@
-export default function CallToAction() {
+export default function HeroSection() {
     return (
       
         
