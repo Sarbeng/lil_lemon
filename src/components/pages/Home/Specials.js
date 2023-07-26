@@ -21,7 +21,7 @@ export default function Specials() {
             title: "Lemon Desert",
             price: "$5.00",
             image: lemonDessert,
-            description: "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
+            description: "This comes straight from grandma's recipe book, every last ingredient has been sourced and is as authentic as can be imagined."
         }
     ]
     return (
@@ -40,10 +40,10 @@ export default function Specials() {
                                 <p className="text-section-categories text-secondary-orange">{cards.price}</p>
                             </section>
                             <p className="text-paragraph-text text-primary-green mb-4 h-[120px]">{cards.description}</p>
-                            <section className="flex items-center gap-2">
+                            <button className="flex items-center gap-2">
                                 <p className="text-highlight-text font-bold">Order a delivery</p>
                                 <img src={bike} alt="a bike icon" />
-                            </section>
+                            </button>
                         </section>
                     </section>
                 })}
