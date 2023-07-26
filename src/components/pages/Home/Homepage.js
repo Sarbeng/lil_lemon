@@ -26,7 +26,7 @@ export default function HomePage () {
       }
 
     return (
-        <LayoutPage>
+       
         
       
      <>
@@ -35,6 +35,6 @@ export default function HomePage () {
         <CustomerSay/>
         <Chicago/>
      </>
-      </LayoutPage>
+      
     );
 }
