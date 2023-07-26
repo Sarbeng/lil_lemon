@@ -27,7 +27,7 @@ export default function Testimonials() {
             review: 'Amazing Service'
         },
     ]
-    return <section className=" bg-primary-yellow px-4 md:px-[290px] mt-8 md:h-[590px] h-auto py-8 flex flex-col md:flex-row justify-center items-center">
+    return <section className=" bg-primary-yellow px-4 md:px-[290px] mt-8 md:h-[590px] h-auto py-8 flex flex-col  justify-center items-center">
         <h2 className="font-markazi text-display text-center">Testimonials</h2>
         <section id="testimonials" className="flex gap-8 justify-between mt-16 flex-col  md:flex-row">
             {testimonials.map((card) => {
