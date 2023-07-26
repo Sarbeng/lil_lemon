@@ -27,7 +27,7 @@ export default function CustomerSay () {
             review:'Amazing Service'
         },
     ]
-    return <section className="bg-primary-yellow px-[290px] mt-8 h-[590px] flex flex-col justify-center"> 
+    return <section className="bg-primary-yellow px-4 md:px-[290px] mt-8 h-[590px] flex flex-col justify-center"> 
         <h2 className="font-markazi text-display text-center">Testimonials</h2>
         <section id="testimonials" className="flex gap-8 justify-between mt-16">
             {testimonials.map((card) => {

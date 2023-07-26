@@ -1,6 +1,6 @@
 
-import mario_and_adrian_a from "../assets/Mario_and_Adrian_A.jpg"
-import mario_and_adrian_b from "../assets/Mario and Adrian b.jpg"
+import mario_and_adrian_a from "./assets/Mario_and_Adrian_A.jpg"
+import mario_and_adrian_b from "./assets/Mario and Adrian b.jpg"
 export default function Chicago() {
     return (
       

@@ -1,7 +1,7 @@
-import greekSalad from "../assets/greek salad.jpg";
-import bruscheta from "../assets/bruchetta.png";
-import lemonDessert from "../assets/lemon dessert.jpg";
-import bike from "../assets/bike.svg"
+import greekSalad from "./assets/greek salad.jpg";
+import bruscheta from "./assets/bruchetta.png";
+import lemonDessert from "./assets/lemon dessert.jpg";
+import bike from "./assets/bike.svg"
 
 export default function Specials() {
     const card_content = [
@@ -25,7 +25,7 @@ export default function Specials() {
         }
     ]
     return (
-        <section className="md:px-[290px] mt-24">
+        <section className="md:px-[290px] px-4 mt-24">
             <section id="title" className="flex justify-between mb-[60px]">
                 <h1 className="font-markazi text-display text-7xl">This week Specials!</h1>
                 <button className="capitalize bg-primary-yellow text-lead-text  text-highlights-black rounded-2xl h-16 px-8 w-[200px] ">Online Menu</button>
