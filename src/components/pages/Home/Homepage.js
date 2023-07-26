@@ -1,9 +1,9 @@
 
 import { useState } from 'react';
 import BookingPage from '../Booking/Booking';
-import CallToAction from './CallToAction';
-import Chicago from './Chicago';
-import CustomerSay from './CustomersSay';
+import CallToAction from './HeroSection';
+import Chicago from './OurStory';
+import CustomerSay from './Testimonials';
 import LayoutPage from '../../Layout/Layout';
 import Specials from './Specials';
 
@@ -29,12 +29,12 @@ export default function HomePage () {
         <LayoutPage>
         
       
-     <section>
+     <>
         <CallToAction/>
         <Specials/>
         <CustomerSay/>
         <Chicago/>
-     </section>
+     </>
       </LayoutPage>
     );
 }
