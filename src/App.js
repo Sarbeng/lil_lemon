@@ -2,7 +2,7 @@
 import { Route, Routes } from "react-router-dom";
 import BookingPage from './components/pages/Booking/Booking';
 import HomePage from './components/pages/Home/Homepage';
-import UnderConstruction from "./components/pages/404/error404";
+import UnderConstruction from "./components/pages/UnderContruction/UnderContruction";
 import Error404 from "./components/pages/404/error404";
 import LayoutPage from "./components/Layout/Layout";
 import BookingConfirmation from "./components/pages/Booking/BookingConfirmation";
