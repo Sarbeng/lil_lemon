@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import LayoutPage from './components/Layout/Layout';
-import BookingPage from './components/pages/Booking/Booking';
 import HomePage from './components/pages/Home/Homepage';
 import Error404 from './components/pages/404/error404';
-import BookingForm from './components/pages/Booking/BookingForm';
-import BookingConfirmation from './components/pages/Booking/BookingConfirmation';
+import Bookings from './components/pages/Bookings';
+import ConfirmedBooking from './components/pages/Bookings/ConfirmedBooking';
 
 const router = createBrowserRouter([
   {
@@ -19,11 +17,11 @@ const router = createBrowserRouter([
   },
   {
     path:"booking",
-    element: <LayoutPage><BookingForm/></LayoutPage>
+    element: <LayoutPage><Bookings/></LayoutPage>
   },
   {
     path:"confirm_booking",
-    element: <LayoutPage><BookingConfirmation/></LayoutPage>
+    element: <LayoutPage><ConfirmedBooking/></LayoutPage>
   },
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
