@@ -3,14 +3,33 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import LayoutPage from './components/Layout/Layout';
+import BookingPage from './components/pages/Booking/Booking';
+import HomePage from './components/pages/Home/Homepage';
+import Error404 from './components/pages/404/error404';
+import BookingForm from './components/pages/Booking/BookingForm';
+import BookingConfirmation from './components/pages/Booking/BookingConfirmation';
 
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<LayoutPage><HomePage/></LayoutPage>,
+    errorElement:<LayoutPage><Error404/></LayoutPage>
+  },
+  {
+    path:"booking",
+    element: <LayoutPage><BookingForm/></LayoutPage>
+  },
+  {
+    path:"confirm_booking",
+    element: <LayoutPage><BookingConfirmation/></LayoutPage>
+  },
+])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-    <App />
-    </BrowserRouter>
+    <RouterProvider router={router}/>
   </React.StrictMode>
 );
 
