@@ -128,6 +128,7 @@ const BookingForm = ({
         </select>
       </FormField>
       <button 
+      aria-label='On Click'
         className="capitalize bg-primary-yellow text-highlight-text  text-highlights-black rounded-[5px] h-[48px] px-8 py-3 w-full mt-4" 
         type="submit" 
         disabled={!areAllFieldsValid()}
